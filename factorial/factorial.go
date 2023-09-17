@@ -1,10 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	factOf5 := fact(5)
-	fmt.Println(factOf5)
+	var n int
+	fmt.Scanln(&n)
+	factOfn := fact(n)
+	fmt.Printf("factorial of %v is %v\n: ", n, factOfn)
 }
 
 func fact(n int) int {
@@ -16,6 +20,6 @@ func fact(n int) int {
 }
 
 /*
-output :
-120
+input : 6
+output : 720
 */
